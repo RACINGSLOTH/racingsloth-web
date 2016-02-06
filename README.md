@@ -1,2 +1,2 @@
-# racingsloth-web
-The bulk of the RACINGSLOTH website.
+# racingsloth-web-spatial
+The Racing Sloth Website iteration "Spatial"
