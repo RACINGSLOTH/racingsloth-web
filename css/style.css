@@ -762,7 +762,7 @@
 
 	ul.contact li a:hover
 	{
-		color: #f62459;
+		color: #fff;
 	}
 
 /*********************************************************************************/
@@ -840,10 +840,11 @@
 /* Banner                                                                        */
 /*********************************************************************************/
 
-		#banner img.banner
+		img.banner
 		{
     	max-width: 100%;
     	height: auto;
+			background-color: transparent !important;
 		}
 
 
@@ -881,7 +882,9 @@
 			text-align: center;
 		}
 
-
+		#nav a:hover {
+			font-weight: 900;
+		}
 
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown
@@ -1075,7 +1078,7 @@
 	{
 		position: relative;
 		text-align: center;
-		background: url(../images/header.jpg) no-repeat center center; 
+		background: url(../images/header.jpg) no-repeat center center;
 		background-attachment: fixed;
 		background-size: cover;
 	}
@@ -1111,6 +1114,11 @@
 		/* Miscellaneous                                                                 */
 		/*********************************************************************************/
 
-			.slothpink {
+			slothpink {
 				color: #F62459;
+				font-weight: 700;
+			}
+
+			racingwhite {
+				font-weight: 700;
 			}
