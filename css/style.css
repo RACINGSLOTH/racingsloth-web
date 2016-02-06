@@ -547,6 +547,7 @@
 			.image.rounded img {
 				border: solid 0.5em rgba(144, 144, 144, 0.25);
 				border-radius: 100%;
+				background-size: contain;
 			}
 
 		.image.captioned {
