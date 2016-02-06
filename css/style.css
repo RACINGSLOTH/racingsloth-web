@@ -36,12 +36,12 @@
 	}
 
 	a {
-		color: #f32853;
-		text-decoration: underline;
+		color: #f62459;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: none;			
 		}
 
 	strong, b {
