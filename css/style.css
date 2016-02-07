@@ -206,6 +206,29 @@
 			display: inline-block;
 			margin: 0 0 0.8em;
 		}
+		#one anim {
+			-webkit-animation: fadein 2s;
+			-moz-animation: fadein 2s;
+			-o-animation: fadein 2s;
+			-animation: fadein 2s;
+		}
+		@keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		 }
+		 @-o-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
 
 		header.major p {
 			font-size: 1.7em;
@@ -1001,6 +1024,29 @@
 						top: -0.075em;
 						vertical-align: middle;
 					}
+		#header anim {
+			-webkit-animation: fadein 2s;
+			-moz-animation: fadein 2s;
+			-o-animation: fadein 2s;
+			-animation: fadein 2s;
+		}
+		@keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		 }
+		 @-o-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
 
 		#header .container {
 			position: relative;
@@ -1013,7 +1059,7 @@
 			#header .container nav {
 				right: 0;
 			}
-
+		
 		#header.alt {
 			background-color: transparent;
 			border: 0;
@@ -1073,19 +1119,35 @@
 			font-size: 5em;
 			line-height: 0;
 			margin-bottom: 0.5em;
+	}		
+		#banner anim {
+			-webkit-animation: fadein 2s;
+			-moz-animation: fadein 2s;
+			-o-animation: fadein 2s;
+			-animation: fadein 2s;
 		}
-
+		@keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-moz-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		@-webkit-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		 }
+		 @-o-keyframes fadein {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		
+			
 		.sloth {
 			color: #f62459;
 		}
-
-		#banner p {
-			color: #aaa;
-			font-size: 1.5em;
-			margin-bottom: 1.75em;
-			text-transform: uppercase;
-		}
-
+		
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
@@ -1102,7 +1164,8 @@
 		padding: 6em 0 4em 0;
 	}
 
-		.wrapper.style2 {
+		.wrapper.
+2 {
 			background-color: #f6f6f6;
 		}
 
