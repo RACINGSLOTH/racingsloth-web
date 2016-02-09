@@ -1,2 +1,2 @@
-# racingsloth-web
-The bulk of the RACINGSLOTH website.
+# racingsloth-web-linear
+The Linear template variant of the RACINGSLOTH website.
