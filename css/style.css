@@ -1130,13 +1130,13 @@
 			}
 /*     BIOGRAPHIES*/
 			.circular {
-				width: 320px;
-				height: 320px;
-				border-radius: 160px;
-				-webkit-border-radius: 160px;
-				-moz-border-radius: 160px;
-				background: url(http://link-to-your/image.jpg) no-repeat;
-				padding: 30px
+				width: 28em;
+				height: 28em;
+				border-radius: 14em;
+				-webkit-border-radius: 14em;
+				-moz-border-radius: 14em;
+				padding: 2em 2em 2em 2.5em;
+				box-radius: 100%;
 			}
 
 /*********************************************************************************/
