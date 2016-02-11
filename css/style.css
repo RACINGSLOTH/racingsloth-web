@@ -278,7 +278,7 @@
 	{
 		position: relative;
 		display: inline-block;
-		background: #80BA8E;
+		background: #F62459;
 		padding: 0.8em 2em;
 		text-decoration: none !important;
 		font-size: 1.2em;
@@ -851,6 +851,7 @@
     	max-width: 100%;
     	height: auto;
 			background-color: transparent !important;
+			padding-top: 4em
 		}
 
 
@@ -1138,6 +1139,8 @@
 				padding: 2em 2em 2em 2.5em;
 				box-radius: 100%;
 			}
+
+
 
 /*********************************************************************************/
 /* Transplanting                                                                 */
