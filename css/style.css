@@ -1158,7 +1158,7 @@
 
 							.feature-grid .feature .image img {
 								display: inline;
-								max-width: 100%;
+								max-width: 80%;
 							}
 
 						.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
@@ -1171,6 +1171,11 @@
 							float: left;
 							margin-left: 5%;
 							text-align: left;
+						}
+
+						.content {
+							padding: 1em;
+							position: relative;
 						}
 
 						.wrapper1 {
