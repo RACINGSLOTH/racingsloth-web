@@ -973,6 +973,7 @@
 			#nav li.active a
 			{
 				color: #FFF;
+				font-weight: bolder
 			}
 
 			#nav > ul > li > ul
@@ -1153,7 +1154,7 @@
 						}
 
 						.feature-grid .feature .image {
-							width: 30%;
+							width: 15em;
 						}
 
 							.feature-grid .feature .image img {
@@ -1174,12 +1175,11 @@
 						}
 
 						.content {
-							padding: 1em;
 							position: relative;
 						}
 
 						.wrapper1 {
-							padding: 6em 4em 4em 4em;
+							;
 							max-width:100%;
 						}
 
