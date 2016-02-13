@@ -1143,6 +1143,7 @@
 				color: #F62459;
 			}
 
+<<<<<<< Updated upstream
 /*********************************************************************************/
 /* About                                                                         */
 /*********************************************************************************/
@@ -1231,3 +1232,91 @@
 				  margin: 0 0 1.5em 0;
 				  text-transform: uppercase;
 				}
+=======
+			racingwhite {
+				font-weight: 700;
+			}
+
+			/* Feature */
+				.feature-grid {
+					position: relative;
+				}
+
+					.feature-grid:after {
+						clear: both;
+						content: '';
+						display: block;
+					}
+
+					.feature-grid .feature {
+						display: inline-block;
+						float: left;
+						margin-bottom: 3em;
+						width: 50%;
+					}
+
+						.feature-grid .feature .content {
+							width: 60%;
+						}
+
+						.feature-grid .feature .image {
+							width: 30%;
+						}
+
+							.feature-grid .feature .image img {
+								display: inline;
+								max-width: 100%;
+							}
+
+						.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
+							float: right;
+							margin-right: 5%;
+							text-align: right;
+						}
+
+						.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
+							float: left;
+							margin-left: 5%;
+							text-align: left;
+						}
+
+						.wrapper1 {
+							padding: 6em 4em 4em 4em;
+							max-width:100%;
+						}
+
+						#header .container1 {
+							position: relative;
+						}
+
+							#header .container1 h1 {
+								left: 0;
+							}
+
+							#header .container1 nav {
+								right: 0;
+							}
+							.image.rounded {
+								border-radius: 100%;
+							}
+
+								.image.rounded img {
+									border: solid 0.5em rgba(144, 144, 144, 0.25);
+									border-radius: 100%;
+								}
+
+					.content h4 {
+						color: #484848;
+						font-weight: 700;
+						line-height: 1em;
+						margin: 0 0 1em 0;
+						text-transform: uppercase;
+					}
+
+					header p {
+						color: #aaa;
+						position: relative;
+						margin: 0 0 1.5em 0;
+						text-transform: uppercase;
+					}
+>>>>>>> Stashed changes
