@@ -805,12 +805,19 @@
 		z-index: 1;
 	}
 
-		#logo racingwhite
+		#logo .racing
 		{
 			color: #FFF;
+			display: inline;
+			text-decoration: none;
+			font-weight: 300;
+			line-height: 1em;
+			font-size: 7em;
+			letter-spacing: -0.05em;
+			margin: 0 0 0.125em 0;
 		}
 
-		#logo slothpink
+		#logo .sloth
 		{
 			color: #F62459;
 			display: inline;
@@ -820,7 +827,6 @@
 			font-size: 7em;
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
-
 		}
 
 		#logo a
@@ -874,7 +880,7 @@
 			cursor: pointer;
 			transition-property: background;
   			transition-duration: 1s;
-  			transition-timing-function: linear;
+  			transition-timing-function: ease-in-out;
   		}
 
 		#nav-wrapper:hover
@@ -889,7 +895,13 @@
 			text-align: center;
 		}
 
+		#nav a {
+			transition: 0s font-weight;
+		}
+
 		#nav a:hover {
+			transition-duration: 1s;
+			transition-timing-function: ease-in-out;
 			font-weight: 900;
 		}
 
@@ -958,7 +970,8 @@
 			}
 
 			#nav > ul > li > a,
-			#nav > ul > li > span
+			#nav > ul > li > span,
+			#nav > ul > div > li > a
 			{
 				display: inline-block;
 				padding: 1.5em 1.5em;
@@ -1024,6 +1037,10 @@
 	#footer header .byline
 	{
 		color: rgba(255,255,255,.2);
+	}
+
+	#footer li:hover a:hover {
+		color: #f62459;
 	}
 
 /*********************************************************************************/
@@ -1122,98 +1139,95 @@
 /* Miscellaneous                                                                 */
 /*********************************************************************************/
 
-			slothpink {
+			.sloth {
 				color: #F62459;
-				font-weight: 700;
 			}
 
-			racingwhite {
-				font-weight: 700;
-			}
-
-			/* Feature */
+/*********************************************************************************/
+/* About                                                                         */
+/*********************************************************************************/
 				.feature-grid {
-					position: relative;
+				  position: relative;
 				}
 
-					.feature-grid:after {
-						clear: both;
-						content: '';
-						display: block;
-					}
+				.feature-grid:after {
+				  clear: both;
+				  content: '';
+				  display: block;
+				}
 
-					.feature-grid .feature {
-						display: inline-block;
-						float: left;
-						margin-bottom: 3em;
-						width: 50%;
-					}
+				.feature-grid .feature {
+				  display: inline-block;
+				  float: left;
+				  margin-bottom: 3em;
+				  width: 50%;
+				}
 
-						.feature-grid .feature .content {
-							width: 60%;
-						}
+				.feature-grid .feature .content {
+				  width: 60%;
+				}
 
-						.feature-grid .feature .image {
-							width: 15em;
-						}
+				.feature-grid .feature .image {
+				  width: 15em;
+				}
 
-							.feature-grid .feature .image img {
-								display: inline;
-								max-width: 80%;
-							}
+				.feature-grid .feature .image img {
+				  display: inline;
+				  max-width: 80%;
+				}
 
-						.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
-							float: right;
-							margin-right: 5%;
-							text-align: right;
-						}
+				.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
+				  float: right;
+				  margin-right: 5%;
+				  text-align: right;
+				}
 
-						.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
-							float: left;
-							margin-left: 5%;
-							text-align: left;
-						}
+				.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
+				  float: left;
+				  margin-left: 5%;
+				  text-align: left;
+				}
 
-						.content {
-							position: relative;
-						}
+				.content {
+				  position: relative;
+				}
 
-						.wrapper1 {
-							;
-							max-width:100%;
-						}
+				.wrapper1 {
+				  max-width: 100%;
+				}
 
-						#header .container1 {
-							position: relative;
-						}
+				#header .container1 {
+				  position: relative;
+				}
 
-							#header .container1 h1 {
-								left: 0;
-							}
+				#header .container1 h1 {
+				  left: 0;
+				}
 
-							#header .container1 nav {
-								right: 0;
-							}
-							.image.rounded {
-								border-radius: 100%;
-							}
+				#header .container1 nav {
+				  right: 0;
+				}
 
-								.image.rounded img {
-									border: solid 0.5em rgba(144, 144, 144, 0.25);
-									border-radius: 100%;
-								}
+				.image.rounded {
+				  border-radius: 100%;
+				}
 
-					.content h4 {
-						color: #484848;
-						font-weight: 700;
-						line-height: 1em;
-						margin: 0 0 1em 0;
-						text-transform: uppercase;
-					}
+				.image.rounded img {
+				  border: solid 0.5em rgba(144, 144, 144, 0.25);
+				  border-radius: 100%;
+				}
 
-					header p {
-						color: #aaa;
-						position: relative;
-						margin: 0 0 1.5em 0;
-						text-transform: uppercase;
-					}
+				.content h4 {
+				  color: #484848;
+				  font-weight: 700;
+				  line-height: 1em;
+				  margin: 0 0 1em 0;
+				  text-transform: uppercase;
+				}
+
+				header p {
+				  color: #aaa;
+				  position: relative;
+				  margin: 0 0 1.5em 0;
+				  text-transform: uppercase;
+				}
