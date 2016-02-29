@@ -2320,17 +2320,30 @@ body.is-menu-visible #menu .inner {
 #banner {
   padding: 10em 0 4.75em 0;
 }
+#banner .reartext {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(tabletmnt.jpeg) no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.container h1 {
+  color: white;
+}
 #banner .inner {
   margin: 0 auto;
   width: 55em;
-}
-.image.rounded {
-  border-radius: 100%;
-}
-.image.rounded img {
-  border: solid 0.5em rgba(144, 144, 144, 0.25);
-  border-radius: 100%;
-  background-size: contain;
 }
 #banner .logo {
   -moz-transition: opacity 2s ease, -moz-transform 1s ease;
@@ -2343,6 +2356,14 @@ body.is-menu-visible #menu .inner {
   transform: translateY(0);
   opacity: 1;
   margin: 0 0 1.3em 0;
+}
+.image.rounded {
+  border-radius: 100%;
+}
+.image.rounded img {
+  border: solid 0.5em rgba(144, 144, 144, 0.25);
+  border-radius: 100%;
+  background-size: contain;
 }
 #banner .logo .icon {
   border-radius: 100%;
@@ -2378,9 +2399,6 @@ body.is-menu-visible #menu .inner {
   margin-bottom: 0.8em;
   padding-bottom: 0.4em;
 }
-#banner .sloth {
-  color: #F62459;
-}
 #banner p {
   -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
   -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
@@ -2409,31 +2427,11 @@ body.is-menu-visible #menu .inner {
 @media screen and (max-width: 1280px) {
   #banner {
     padding: 7em 0 8.25em 0;
+    background-color: #2e3141;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
     background-size: auto, cover;
     background-position: center, center;
     margin-bottom: -6.5em;
-  }
-  #background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-		-webkit-filter: blur(10px);
-		-moz-filter: blur(10px);
-		-o-filter: blur(10px);
-		-ms-filter: blur(10px);
-		filter: blur(10px);
-  }
-  .container h1 {
-    color: white;
   }
 }
 @media screen and (max-width: 980px) {
@@ -2554,44 +2552,6 @@ body.is-loading #banner p {
   background-color: #2e3141;
   margin: 6.5em 0;
   position: relative;
-}
-.anim:hover {
-  -webkit-animation: fadein 1s 1;
-  -moz-animation: fadein 1s 1;
-  -o-animation: fadein 1s 1;
-  -animation: fadein 1s 1;
-}
-@keyframes fadein {
-  from {
-    color: #FFF;
-  }
-  to {
-    color: #F62459;
-  }
-}
-@-moz-keyframes fadein {
-  from {
-    color: #FFF;
-  }
-  to {
-    color: #F62459;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    color: #FFF;
-  }
-  to {
-    color: #F62459;
-  }
-}
-@-o-keyframes fadein {
-  from {
-    color: #FFF;
-  }
-  to {
-    color: #F62459;
-  }
 }
 .wrapper:before, .wrapper:after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141;' /%3E%3C/svg%3E");
