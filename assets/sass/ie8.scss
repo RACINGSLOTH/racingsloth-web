@@ -4,58 +4,16 @@
 @import 'libs/skel';
 
 /*
-	Landed by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-	$color-border: mix(_palette(bg), _palette(fg-bold), 70);
-	$color-border-bg: mix(_palette(bg), _palette(fg-bold), 90);
-
 /* Basic */
 
-	body {
-		color: _palette(fg-bold);
-	}
-
-	body, html, #page-wrapper {
-		height: 100%;
-	}
-
-	blockquote {
-		border-left: solid 4px $color-border;
-	}
-
-	code {
-		background: $color-border-bg;
-	}
-
-	hr {
-		border-bottom: solid 1px $color-border;
-	}
-
-/* Icon */
-
-	.icon {
-		&.major {
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
-	}
-
-/* Image */
-
-	.image {
+	pre, code {
 		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		&:before {
-			display: none;
-		}
-
-		img {
-			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
 	}
 
 /* Form */
@@ -67,52 +25,17 @@
 	textarea {
 		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		&:focus {
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-		}
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"] {
-		line-height: _size(element-height);
+		line-height: 3em;
 	}
 
 	input[type="checkbox"],
-	input[type="radio"] {
-		font-size: 3em;
+	input[type="radio"], {
+		opacity: 1;
+		z-index: auto;
+
 		& + label {
 			&:before {
 				display: none;
-			}
-		}
-	}
-
-/* Table */
-
-	table {
-		tbody {
-			tr {
-				border: solid 1px $color-border;
-			}
-		}
-
-		thead {
-			border-bottom: solid 1px $color-border;
-		}
-
-		tfoot {
-			border-top: solid 1px $color-border;
-		}
-
-		&.alt {
-			tbody {
-				tr {
-					td {
-						border: solid 1px $color-border;
-					}
-				}
 			}
 		}
 	}
@@ -123,68 +46,99 @@
 	input[type="reset"],
 	input[type="button"],
 	.button {
-		border: solid 1px _palette(fg-bold) !important;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 
-		&.special {
-			border: 0 !important;
+		&.alt {
+			border: solid 2px _palette(border);
 		}
 	}
 
-/* Goto Next */
+/* Box */
 
-	.goto-next {
-		display: none;
-	}
+	.box {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 
-/* Spotlight */
-
-	.spotlight {
-		height: 100%;
-
-		.content {
-			background: _palette(accent2);
+		.image {
+			&.featured {
+				margin: 2em 0;
+				width: 100%;
+			}
 		}
 	}
 
-/* Wrapper */
+/* Icon */
 
-	.wrapper {
-		&.style2 {
-			input[type="text"],
-			input[type="password"],
-			input[type="email"],
-			select,
-			textarea {
-				&:focus {
-					border-color: _palette(fg-bold);
+	.icon {
+		&.major {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Header */
+
+	#header {
+		nav {
+			> ul {
+				> li {
+					a {
+						color: #fff;
+						display: inline-block;
+						text-decoration: none;
+						border: 0;
+
+						&.icon {
+							&:before {
+								color: #fff;
+								margin-right: 0.5em;
+							}
+						}
+					}
 				}
 			}
+		}
 
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			.button {
-				&.special {
-					&:hover, &:active {
-						color: _palette(accent1) !important;
+		&.alt {
+			color: #fff;
+
+			nav {
+				> ul {
+					> li {
+						a:not(.button) {
+							&.icon {
+								&:before {
+									color: rgba(255,255,255,0.75);
+								}
+							}
+						}
+
+						&.active {
+							a:not(.button) {
+								background-color: rgba(255,255,255,0.2);
+							}
+						}
 					}
 				}
 			}
 		}
 	}
 
-/* Dropotron */
-
 	.dropotron {
-		background: _palette(accent2);
-		box-shadow: none !important;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		> li {
-			a, span {
-				color: _palette(fg-bold) !important;
-			}
-		}
+		border: solid 1px _palette(border);
 
 		&.level-0 {
 			margin-top: 0;
@@ -195,22 +149,44 @@
 		}
 	}
 
-/* Header */
-
-	#header {
-		background: _palette(accent2);
-	}
-
 /* Banner */
 
 	#banner {
-		height: 100%;
+		background-attachment:	scroll;
+		background-image:		url('../../images/banner.jpg');
+		background-position:	auto;
+		background-repeat:		no-repeat;
+		background-size:		cover;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 
-		&:before {
-			height: 100%;
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"],
+		.button {
+			border: solid 2px #fff;
+		}
+	}
+
+/* Main */
+
+	#main {
+		position: relative;
+		z-index: 1;
+	}
+
+/* CTA */
+
+	#cta {
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		select,
+		textarea {
+			background: _palette(accent2, bg);
+			border: solid 2px #fff;
 		}
 
-		&:after {
-			background-image: url('images/ie/banner-overlay.png');
+		.formerize-placeholder {
+			color: #fff !important;
 		}
 	}
