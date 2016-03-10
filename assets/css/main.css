@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500italic);
 @import url("font-awesome.min.css");
 
 /*
@@ -2836,6 +2837,7 @@
 		height: 3em;
 		line-height: 3em;
 		letter-spacing: -1px;
+		font-family: 'Raleway';
 	}
 
 		#logo a {
@@ -2879,7 +2881,9 @@
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
-
+ #one .raleway {
+	 font-family: 'raleway';
+ }
 /* One */
 
 	#one {
@@ -3388,6 +3392,7 @@
 			#header {
 				height: 2.5em;
 				line-height: 2.5em;
+				font-family: 'Raleway';
 			}
 
 			body {
