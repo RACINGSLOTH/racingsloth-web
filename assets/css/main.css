@@ -1387,7 +1387,7 @@ input, textarea, select {
   letter-spacing: 0.5px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: 700;
   color: inherit;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2213,9 +2213,8 @@ body.is-loading:after {
 		top: 0;
 		height: 3em;
 		line-height: 3em;
-		letter-spacing: 1px;
 		font-family: "Raleway", sans-serif;
-		font-weight: 800;
+    letter-spacing: -1px;
 	}
 
 		#logo a {
