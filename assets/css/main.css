@@ -2218,7 +2218,7 @@ body.is-loading:after {
 	}
 
 		#logo a {
-			font-size: 1.25em;
+			font-size: 1.15em;
 		}
 
 	#nav {
@@ -2857,9 +2857,10 @@ body.is-touch .poptrox-popup .nav-next, body.is-touch .poptrox-popup .nav-previo
     position: relative;
     left: 0;
     top: 0;
+    font-family: 'Raleway', sans-serif;
     height: 2.5em;
     line-height: 2.5em;
-    font-weight: 800;
+    font-weight: 700;
   }
   #logo a {
     font-size: 1em;
