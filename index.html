@@ -13,17 +13,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="shortcut icon" type="image/png" href="images/rslogo.png_32x32.png" />
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#f62459">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#f62459">
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 </head>
+
 <body>
 
 	<!-- Header -->
-	<header id="header">
+	<header id="header" style="width:100%">
 
 		<!-- Logo -->
-		<h1 id="logo" style="font-family:'Raleway', sans-serif;"><img src="images/logo.png" alt="Smiley face" align="left" style="width:2.8em;height:2.8em;"></h1>
+		<div id="cont" style="width:5%; margin 0 auto;">
+			<h1 id="logo"><a href="#intro"><img id="logo-img" src="images/logo.png" alt="RACINGSLOTH" /></a></h1>
+		</div>
 
 		<!-- Nav -->
 		<nav id="nav">
@@ -34,7 +58,6 @@
 				<li><a href="#team">Our Team</a></li>
 				<li><a href="#work">Our Work</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="login.html">Login</a></li>
 			</ul>
 		</nav>
 
@@ -42,13 +65,12 @@
 
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
-		<video autoplay muted loop src="images/beginfinal.mp4" class="background-video">
-			<source src="images/beginfinal.mp4" type="video/mp4" />
+		<video autoplay muted loop src="images/yes.mp4" class="background-video">
+			<source src="images/yes.mp4" type="video/mp4" />
 		</video>
 		<div class="content container 75%">
 			<header>
-				<img src="images/logo.png" alt="Smiley face" align="middle" style="width:13em;height:13em">
-				<h2 style="font-family:Raleway, sans-serif">RACING<span class="sloth">SLOTH</span></h2>
+				<h2>RACING<span class="sloth">SLOTH</span></h2>
 			</header>
 
 			<footer>
@@ -59,16 +81,15 @@
 
 	<!-- One -->
 	<section id="one" class="main style2 right dark fullscreen">
-		<video autoplay muted loop src="images/video2.mp4" class="background-video">
-			<source src="images/video2.mp4" type="video/mp4" />
+		<video autoplay muted loop src="images/so.mp4" class="background-video">
+			<source src="images/so.mp4" type="video/mp4" />
 		</video>
 		<div class="content box style2">
 			<header>
 				<h2>What We Do</h2>
 			</header>
 			<p>
-				We are a brand new film production group. We do a ton of cool stuff, from sketches to short films.
-				We took quite a while off but we're back. Rested. Refueled. <span class="sloth">Ready to go.</span>
+				We are a brand new film production group. We do a ton of cool stuff, from sketches to short films. We took quite a while off but we're back. Rested. Refueled. <span class="sloth">Ready to go.</span>
 			</p>
 		</div>
 		<a href="#two" class="button style2 down anchored">Next</a>
@@ -76,213 +97,249 @@
 
 	<!-- Two -->
 	<section id="two" class="main style2 left dark fullscreen">
-		<video autoplay muted loop src="images/video1.mp4" class="background-video">
-			<source src="images/video1.mp4" type="video/mp4" />
+		<video autoplay muted loop src="images/one.mp4" class="background-video">
+			<source src="images/one.mp4" type="video/mp4" />
 		</video>
 		<div class="content box style2">
 			<header>
 				<h2>Who We Are</h2>
 			</header>
 			<p>
-				We don't like to dwell on the past, but the truth is simple. We are a group of high school students with
-				an ambition: to create some of the best content out there. Rebranded as <strong>RACING<span class="sloth">SLOTH</span></strong>,
-				we look forward to attaining that goal.
+				We don't like to dwell on the past, but the truth is simple. We are a group of high school students with an ambition: to create some of the best content out there. Rebranded as <strong>RACING<span class="sloth">SLOTH</span></strong>, we look forward
+				to attaining that goal.
 			</p>
 		</div>
 		<a href="#team" class="button style2 down anchored">Next</a>
 	</section>
 
-		<!--Our Team-->
-		<section id="team" class="main style3 primary">
-			<div class="content container">
-				<header>
-					<h2>Our Team</h2>
-					<p>The people that make RACING<font color="#F62459">SLOTH</font> happen.</p>
-				</header>
-			</div>
-			<div class="container">
+	<!--Our Team-->
+	<section id="team" class="main style3 primary">
+		<div class="content container">
+			<header>
+				<h2>Our Team</h2>
+				<p>The people that make RACING<font color="#f62459">SLOTH</font> happen.</p>
+			</header>
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4 col-sm-4">
+					<div class="team-member">
+						<div class="team-img">
+							<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
+						</div>
+						<div class="team-hover">
+							<div class="desk">
+								<h4>Director, DOP, Editor</h4>
+								<p>Cinematographic Genius, Cross Country Extraordinaire</p>
+							</div>
+							<div class="s-link">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-title">
+						<h5>Vishal Sodem</h5>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="team-member">
+						<div class="team-img">
+							<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
+						</div>
+						<div class="team-hover">
+							<div class="desk">
+								<h4>Director, DOP, Editor</h4>
+								<p>Cinematographic Genius, Cross Country Extraordinaire</p>
+							</div>
+							<div class="s-link">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-title">
+						<h5>Vishal Sodem</h5>
+					</div>
+				</div>
+</div>
+			<div class="row">
+
+				<div class="col-md-4 col-sm-4">
+					<div class="team-member">
+						<div class="team-img">
+							<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
+						</div>
+						<div class="team-hover">
+							<div class="desk">
+								<h4>Director, DOP, Editor</h4>
+								<p>Cinematographic Genius, Cross Country Extraordinaire</p>
+							</div>
+							<div class="s-link">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-title">
+						<h5>Vishal Sodem</h5>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4">
+					<div class="team-member">
+						<div class="team-img">
+							<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
+						</div>
+						<div class="team-hover">
+							<div class="desk">
+								<h4>Director, DOP, Editor</h4>
+								<p>Cinematographic Genius, Cross Country Extraordinaire</p>
+							</div>
+							<div class="s-link">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="team-title">
+						<h5>Vishal Sodem</h5>
+					</div>
+				</div>
+</div>
+
 				<div class="row">
 					<div class="col-md-4 col-sm-4">
 						<div class="team-member">
 							<div class="team-img">
-								<img src="images/thumbs/sidharth.jpg" alt="team member" class="img-responsive">
+								<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
 							</div>
+							<div class="team-hover">
+								<div class="desk">
+									<h4>Director, DOP, Editor</h4>
+									<p>Cinematographic Genius, Cross Country Extraordinaire</p>
+								</div>
+								<div class="s-link">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-title">
+							<h5>Vishal Sodem</h5>
+						</div>
+					</div>
 
-								<div class="team-hover">
-									<div class="desk">
-										<h4>Head-Writer, Producer</h4>
-										<p>Avid Programmer. Aspiring Entrepreneur.</p>
-									</div>
-									<div class="s-link">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="https://twitter.com/TheSidRajaram"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="team-member">
+						<div class="team-img">
+							<img src="images/thumbs/vishal.jpg" alt="Vishal Sodem" class="img-responsive">
+						</div>
+						<div class="team-hover">
+							<div class="desk">
+								<h4>Director, DOP, Editor</h4>
+								<p>Cinematographic Genius, Cross Country Extraordinaire</p>
 							</div>
-							<div class="team-title">
-								<h5>Sidharth Rajaram</h5>
+							<div class="s-link">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="images/thumbs/neel.jpg" alt="team member" class="img-responsive">
-								</div>
-								<div class="team-hover">
-									<div class="desk">
-										<h4>Co-Director, Co-DOP</h4>
-										<p>Avid Photographer. Amateur Coder.</p>
-									</div>
-									<div class="s-link">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-title">
-								<h5>Neel Griddalur</h5>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="images/thumbs/vishal.jpg" alt="team member" class="img-responsive">
-								</div>
-								<div class="team-hover">
-									<div class="desk">
-										<h4>Director, DOP, Editor</h4>
-										<p>Cinematographic Genius, Cross Country Extraordinaire</p>
-									</div>
-									<div class="s-link">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
+					</div>
 
-							<div class="team-title">
-								<h5>Vishal Sodem</h5>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4" style="text-align: center">
-							<div class="team-member" style="display: inline-block;">
-								<div class="team-img">
-									<img src="images/thumbs/sidhu.jpg" alt="team member" class="img-responsive">
-								</div>
-								<div class="team-hover">
-									<div class="desk">
-										<h4>Actor, Producer</h4>
-										<p>Music Lover, Avid Diver.</p>
-									</div>
-									<div class="s-link">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-title">
-								<h5>Sidhartha Murthy</h5>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="images/thumbs/vishal.jpg" alt="team member" class="img-responsive">
-								</div>
-								<div class="team-hover">
-									<div class="desk">
-										<h4>Finances, Future Ventures</h4>
-										<p>Young Mogul, Chess Aficionado.</p>
-									</div>
-									<div class="s-link">
-										<a href="#"><i class="fa fa-facebook"></i></a>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-										<a href="#"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
-							<div class="team-title">
-								<h5>Kireeti Devarakonda</h5>
-							</div>
-						</div>
+					<div class="team-title">
+						<h5>Vishal Sodem</h5>
+					</div>
+				</div>
 			</div>
+
 		</div>
 	</section>
 	<!-- Contact -->
 	<section id="contact" class="main style3 secondary">
-						<div class="content container">
-							<header>
-								<h2>Drop us a line.</h2>
-								<p>Have some feedback or a question? Send them in! We're waiting!</p>
-							</header>
-							<div class="box container 75%">
+		<div class="content container">
+			<header>
+				<h2>Drop us a line.</h2>
+				<p>Have some feedback or a question? Send them in! We're waiting!</p>
+			</header>
+			<div class="box container 75%">
 
-								<!-- Contact Form -->
-								<form method="post" action="#">
-									<div class="row 50%">
-										<div class="6u 12u(mobile)">
-											<input type="text" name="name" placeholder="Name" />
-										</div>
-										<div class="6u 12u(mobile)">
-											<input type="email" name="email" placeholder="Email" />
-										</div>
-									</div>
-									<div class="row 50%">
-										<div class="12u">
-											<textarea name="message" placeholder="Message" rows="6"></textarea>
-										</div>
-									</div>
-									<div class="row">
-										<div class="12u">
-											<ul class="actions">
-												<li>
-													<input type="submit" value="Send" color="#f62459" />
-												</li>
-											</ul>
-										</div>
-									</div>
-								</form>
-
-							</div>
+				<!-- Contact Form -->
+				<form method="post" action="contact.php">
+					<div class="row 50%">
+						<div class="6u 12u(mobile)">
+							<input type="text" name="name" placeholder="Name" />
 						</div>
-					</section>
+						<div class="6u 12u(mobile)">
+							<input type="email" name="email" placeholder="Email" />
+						</div>
+					</div>
+					<div class="row 50%">
+						<div class="12u">
+							<textarea name="message" placeholder="Message" rows="6"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<ul class="actions">
+								<li>
+									<input id="submitbutton" type="submit" value="Send" color="#f62459" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+		</div>
+	</section>
 
 	<!-- Footer -->
 	<footer id="footer">
 
 		<!-- Icons -->
 		<ul class="actions">
-			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.youtube.com/channel/UCaBUNcNXI_ws69mOcdhhCFg" class="icon fa-youtube-play"><span class="label">YouTube</span></a></li>
+			<li><a href="https://instagram.com/racing_sloth" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://www.facebook.com/racingslothproductions/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 			<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-			<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-			<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://dribbble.com/racing_sloth" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+
 		</ul>
 
 		<!-- Menu -->
 		<ul class="menu">
-			<li><abbr title="Design: HTML5 UP">Copyright &copy; RACINGSLOTH Productions. All rights reserved.</abbr></li>
-			<!-- Neel and Sidharth: The <abbr> tag is such that when the text in the tag is hovered over, a tooltip will show with
-					the 'title' attribute (e.g. When hovering over "Copyright (c) RACINGSLOTH Productions. All rights reserved.", a tool-
-					tip will appear that says "Design: HTML5 UP"). We need this because of the Creative Commons Attribution License (3.0)
-				 	that the maker of this design implemented upon his designs.-->
+			<li><abbr title="Design: HTML5 UP">Copyright &copy;
+				<script type="text/javascript">
+  				document.write(new Date().getFullYear());
+				</script>
+			RACINGSLOTH Productions. All rights reserved.</abbr></li>
 		</ul>
 
 	</footer>
 </body>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 
 </html>

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,800");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,300");
 @import url("font-awesome.min.css");
 
 /*
@@ -8,10 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
   Redesigned by Neel Griddalur, Vishal Sodem, and Sidharth Rajaram
 */
-
-h1, h2, #nav, header, footer, #logo {
-  font-family: "Raleway", sans-serif;
-}
 
 .background-video {
   position: absolute;
@@ -23,20 +18,45 @@ h1, h2, #nav, header, footer, #logo {
   height: auto;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(intro.jpg) no-repeat;
   background-size: cover;
+}
+iframe {
+  display: none;
+  border: 0px;
+}
+#logo-img, #cont a {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 2em;
+}
+#team div.row > div {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+  #team div.row {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+  }
+  #team div.row > div {
+    margin: 0.25em;
+  }
 }
 
 /* Reset */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: raleway;
+  font-family: "Raleway", Helvetica, Gill Sans, sans-serif;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
@@ -175,7 +195,7 @@ body {
     max-width: 118.75%;
     min-width: 95%;
   }
-  .container.\37 5\25 {
+  container.\37 5\25 {
     width: 71.25%;
   }
   .container.\35 0\25 {
@@ -1362,7 +1382,7 @@ html {
 body {
   background: #fff;
   height: 100%;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 18pt;
   line-height: 1.75em;
@@ -1396,7 +1416,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 4em;
   letter-spacing: -2px;
   line-height: 1.25em;
 }
@@ -1552,7 +1572,6 @@ ul.actions li {
 ul.actions li:first-child {
   margin-left: 0;
 }
-
 ol.default {
   list-style: decimal;
   padding-left: 1.25em;
@@ -1645,7 +1664,8 @@ input[type="button"], input[type="submit"], input[type="reset"], .button, button
   -webkit-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f62459; /** #98c593 **/
+  background-color: #f62459;
+  /** #98c593 **/
   border: 0;
   border-radius: 3.5em;
   color: #fff;
@@ -1674,7 +1694,7 @@ input[type="button"].down.anchored, input[type="submit"].down.anchored, input[ty
   bottom: 0;
   border-bottom: 0;
   border-radius: 100%;
-  height: 4.5em;
+  height: 5em;
   margin-left: -2.5em;
   margin-bottom: 1em;
 }
@@ -1683,10 +1703,10 @@ input[type="button"].anchored, input[type="submit"].anchored, input[type="reset"
   left: 50%;
 }
 input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, .button:hover, button:hover {
-  background-color: #a8d5a3;
+  background-color: #f74f7a;
 }
 input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, .button:active, button:active {
-  background-color: #88b583;
+  background-color: #dd2050;
 }
 input[type="button"].style2, input[type="submit"].style2, input[type="reset"].style2, .button.style2, button.style2 {
   background-color: transparent;
@@ -1807,7 +1827,7 @@ input[type="button"].style2.down, input[type="submit"].style2.down, input[type="
   background: #f5f6f7;
 }
 .main.style3.tertiary {
-  background: rgb(108,108,108);
+  background: rgb(108, 108, 108);
 }
 
 /* Dark */
@@ -2191,70 +2211,87 @@ body.is-loading:after {
 
 /* Header */
 
-	#header {
-		position: fixed;
-		z-index: 10000;
-		left: 0;
-		top: 0;
-		width: 100%;
-		background: #fff;
-		background: rgba(255, 255, 255, 0.95);
-		height: 3em;
-		line-height: 3em;
-		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
-	}
-
-	body {
-		padding-top: 3em;
-	}
-
-	#logo {
-		position: absolute;
-		left: 0.5em;
-		top: 0.08em;
-		height: 3em;
-		line-height: 3em;
-		font-family: "Raleway", sans-serif;
-    letter-spacing: -1px;
-	}
-
-		#logo a {
-			font-size: 1.15em;
-		}
-
-	#nav {
-		position: absolute;
-		right: 0.5em;
-		top: 0;
-		height: 3em;
-		line-height: 3em;
-	}
-
-	#nav ul {
-		margin: 0;
-	}
-
-	#nav ul li {
-		display: inline-block;
-		margin-left: 0.5em;
-		font-size: 0.9em
-  }
-
-	#nav ul li a {
-    display: block;
-		color: inherit;
-		text-decoration: none;
-		height: 3em;
-		line-height: 3em;
-		padding: 0 0.5em 0 0.5em;
-		outline: 0;
-	}
-
-  #nav  ul li a:hover {
-    color: #f62459;
-    text-decoration: none;
-    display: block;
-  }
+#header {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  height: 3em;
+  line-height: 3em;
+  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+}
+body {
+  padding-top: 3em;
+}
+#logo img {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 3em;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: -1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo a {
+  font-size: 1.15em;
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo-img, #logo-img img {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align: middle;
+  text-align: middle;
+}
+#header img {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+}
+#nav ul {
+  margin: 0;
+}
+#nav ul li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.9em
+}
+#nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 0.5em 0 0.5em;
+  outline: 0;
+}
+#nav ul li a:hover {
+  color: #f62459;
+  text-decoration: none;
+  display: block;
+}
 
 /* Intro */
 
@@ -2287,6 +2324,11 @@ body.is-loading:after {
 
 /* Team */
 
+#team .row {
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+}
 #team .row.images .image {
   -moz-transition: all 1s ease;
   -webkit-transition: all 1s ease;
@@ -2348,132 +2390,130 @@ body.is-loading:after {
 #work .row.images.inactive .image.from-bottom {
   top: 7em;
 }
-
 .slothteam {
   position: center;
   font-size: 3em;
   font-weight: 700;
 }
 .heading-title {
-   margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .text-center {
-   text-align: center;
+  text-align: center;
 }
 .heading-title h3 {
-   margin-bottom: 0;
-   letter-spacing: 2px;
-   font-weight: normal;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  font-weight: normal;
 }
 .p-top-30 {
-   padding-top: 30px;
+  padding-top: 30px;
 }
 .half-txt {
-   width: 60%;
-   margin: 0 auto;
-   display: inline-block;
-   line-height: 25px;
-   color: #7e7e7e;
+  width: 60%;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 25px;
+  color: #7e7e7e;
 }
 .text-uppercase {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .team-member, .team-member .team-img {
-   position: relative;
- }
+  position: relative;
+}
 .team-member {
-   overflow: hidden;
+  overflow: hidden;
+  display: inline-block;
 }
 .team-member, .team-member .team-img {
-   position: relative;
+  position: relative;
 }
-
+.team-member {
+  display: inline-block;
+}
 .team-hover {
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   margin: 0;
-   border: 20px solid rgba(0, 0, 0, 0.1);
-   background-color: rgba(255, 255, 255, 0.90);
-   opacity: 0;
-   -webkit-transition: all 0.3s;
-   transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .team-member:hover .team-hover .desk {
-   top: 35%;
+  top: 35%;
 }
 .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
-   opacity: 1;
+  opacity: 1;
 }
 .team-hover .desk {
-   position: absolute;
-   top: 0%;
-   width: 100%;
-   opacity: 0;
-   -webkit-transform: translateY(-55%);
-   -ms-transform: translateY(-55%);
-   transform: translateY(-55%);
-   -webkit-transition: all 0.3s 0.2s;
-   transition: all 0.3s 0.2s;
-   padding: 0 20px;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
 }
 .desk, .desk h4, .team-hover .s-link a {
-   text-align: center;
-   color: #222;
-
+  text-align: center;
+  color: #222;
 }
 .team-member:hover .team-hover .s-link {
-   bottom: 10%;
+  bottom: 10%;
 }
 .team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
-   opacity: 1;
+  opacity: 1;
 }
 .team-hover .s-link {
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   opacity: 0;
-   text-align: center;
-   -webkit-transform: translateY(45%);
-   -ms-transform: translateY(45%);
-   transform: translateY(45%);
-   -webkit-transition: all 0.3s 0.2s;
-   transition: all 0.3s 0.2s;
-   font-size: 35px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
 }
 .desk, .desk h4, .team-hover .s-link a {
-   text-align: center;
-   color: #222;
+  text-align: center;
+  color: #222;
 }
 .team-member .s-link a {
-   margin: 0 10px;
-   color: #333;
-   font-size: 16px;
-   display: grid;
+  margin: 0 10px;
+  color: #333;
+  font-size: 16px;
+  display: grid;
 }
 .team-title {
-   position: static;
-   padding: 20px 0;
-   display: inline-block;
-   letter-spacing: 2px;
-   width: 100%;
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
 }
 .team-title h5 {
-   margin-bottom: 0px;
-   display: block;
-   text-transform: uppercase;
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
 }
 .team-title span {
-   font-size: 12px;
-   text-transform: uppercase;
-   color: #a5a5a5;
-   letter-spacing: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
 }
-
-
 
 /* Contact */
 
@@ -2504,7 +2544,8 @@ body.is-loading:after {
   height: 5em;
   line-height: 5em;
   margin: 0;
-  background: #39454b;
+  background: #283035;
+  /** #39454b **/
   color: #999;
   color: rgba(185, 186, 187, 0.5);
   overflow: hidden;
@@ -2848,23 +2889,23 @@ body.is-touch .poptrox-popup .nav-next, body.is-touch .poptrox-popup .nav-previo
   #header {
     height: 2.5em;
     line-height: 2.5em;
+    width: 100%;
     font-family: "Raleway", sans-serif;
+  }
+  #cont {
+    width: auto;
+    margin: 0 auto;
+    display: block;
   }
   body {
     padding-top: 2.5em;
   }
-  #logo {
-    text-align: center;
-    position: relative;
-    left: 0;
-    top: 0;
-    font-family: 'Raleway', sans-serif;
-    height: 2.5em;
-    line-height: 2.5em;
-    font-weight: 700;
-  }
   #logo a {
     font-size: 1em;
+    position: absolute;
+    display: block;
+    margin: auto;
+    text-align: center;
   }
   #nav {
     display: none;
@@ -2907,7 +2948,6 @@ body.is-touch .poptrox-popup .nav-next, body.is-touch .poptrox-popup .nav-previo
   font-weight: inherit;
   color: #f62459;
 }
-
 .rlight {
   font-weight: 300;
 }
