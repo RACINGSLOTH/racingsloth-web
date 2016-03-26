@@ -1416,8 +1416,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 h2 {
-  font-size: 4em;
-  letter-spacing: -2px;
+  font-size: 3em;
+  letter-spacing: -1px;
   line-height: 1.25em;
 }
 strong, b {
@@ -1745,7 +1745,7 @@ input[type="button"].style2.down, input[type="submit"].style2.down, input[type="
   padding: 3em 0 3em 0;
 }
 .main.style1 h2 {
-  font-size: 4.25em;
+  font-size: 5em;
   line-height: 1em;
   letter-spacing: -4px;
 }
@@ -1825,9 +1825,6 @@ input[type="button"].style2.down, input[type="submit"].style2.down, input[type="
 }
 .main.style3.secondary {
   background: #f5f6f7;
-}
-.main.style3.tertiary {
-  background: rgb(108, 108, 108);
 }
 
 /* Dark */
@@ -2136,7 +2133,7 @@ body:before {
   font-style: normal;
   font-weight: normal;
   text-transform: none !important;
-  color: #ececec;
+  color: #fff;
   content: '\f1ce';
   cursor: default;
   display: block;
@@ -2157,7 +2154,7 @@ body:after {
   -webkit-animation: overlay-hide 1.5s ease-in forwards !important;
   -ms-animation: overlay-hide 1.5s ease-in forwards !important;
   animation: overlay-hide 1.5s ease-in forwards !important;
-  background: #ffffff;
+  background: #f62459;
   content: '';
   display: block;
   height: 100%;
@@ -2233,8 +2230,10 @@ body {
   line-height: 3em;
   font-family: "Raleway", sans-serif;
   letter-spacing: -1px;
-  margin-left: auto;
-  margin-right: auto;
+}
+#logo h1 {
+  display: block;
+  margin-left: 2em;
 }
 #logo a {
   font-size: 1.15em;
@@ -2242,17 +2241,12 @@ body {
   height: 2.5em;
   width: 2.5em;
   line-height: 2.5em;
-  margin-left: auto;
-  margin-right: auto;
 }
 #logo-img, #logo-img img {
   position: absolute;
   height: 2.5em;
   width: 2.5em;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  align: middle;
   text-align: middle;
 }
 #header img {
@@ -2260,8 +2254,7 @@ body {
   height: 2.5em;
   width: 2.5em;
   line-height: 2.5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0.25em;
 }
 #nav {
   position: absolute;
@@ -2422,9 +2415,10 @@ body {
 .team-member, .team-member .team-img {
   position: relative;
 }
-.team-member {
+.team-member, .team-hover {
   overflow: hidden;
   display: inline-block;
+  border-radius: 2.5%;
 }
 .team-member, .team-member .team-img {
   position: relative;
@@ -2467,6 +2461,9 @@ body {
   text-align: center;
   color: #222;
 }
+.team-member .s-link i {
+  font-size: 1.5em;
+}
 .team-member:hover .team-hover .s-link {
   bottom: 10%;
 }
@@ -2492,9 +2489,12 @@ body {
 }
 .team-member .s-link a {
    margin: 0 10px;
-   color: #f62459;
+   color: #222;
    font-size: 16px;
    display: grid;
+}
+.team-member .s-link a:hover {
+  color: #f62459;
 }
 .team-title {
   position: static;
