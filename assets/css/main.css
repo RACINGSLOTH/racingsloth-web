@@ -2491,10 +2491,10 @@ body {
   color: #222;
 }
 .team-member .s-link a {
-  margin: 0 10px;
-  color: #333;
-  font-size: 16px;
-  display: grid;
+   margin: 0 10px;
+   color: #f62459;
+   font-size: 16px;
+   display: grid;
 }
 .team-title {
   position: static;
