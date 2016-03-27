@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,900italic,800italic,700italic,600italic");
 
 /*
 	Landed by HTML5 UP
@@ -2857,6 +2858,19 @@
 		position: relative;
 	}
 
+	.background-video {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  min-width: 100%;
+	  min-height: 100%;
+	  width: auto;
+	  height: auto;
+	  -webkit-transform: translateX(-50%) translateY(-50%);
+	  transform: translateX(-50%) translateY(-50%);
+	  background-size: cover;
+	}
+
 		.spotlight:nth-last-of-type(1) {
 			z-index: 1;
 		}
@@ -3265,6 +3279,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 100;
+		font-family: 'Raleway';
 	}
 
 		#header h1 {
@@ -3274,6 +3289,8 @@
 			margin: 0;
 			position: absolute;
 			top: 0;
+			font-family: 'Raleway';
+			font-weight: 700;
 		}
 
 		#header nav {
@@ -3342,7 +3359,57 @@
 		text-align: center;
 		z-index: 21;
 	}
+	#banner body {
+	  background:#0b1d2a;
+	}
 
+	.arrows {
+		width: 60px;
+		height: 72px;
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		bottom: 0.015%;
+	}
+
+	.arrows path {
+		stroke: #2994D1;
+		fill: transparent;
+		stroke-width: 1px;
+		animation: arrow 2s infinite;
+		-webkit-animation: arrow 2s infinite;
+	}
+
+	@keyframes arrow
+	{
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+	}
+
+	@-webkit-keyframes arrow /*Safari and Chrome*/
+	{
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+	}
+
+	.arrows path.a1 {
+		animation-delay:-1s;
+		-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+	}
+
+	.arrows path.a2 {
+		animation-delay:-0.5s;
+		-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+	}
+
+	.arrows path.a3 {
+		animation-delay:0s;
+		-webkit-animation-delay:0s; /* Safari 和 Chrome */
+	}
 		#banner:before {
 			content: '';
 			display: inline-block;
@@ -3384,6 +3451,8 @@
 				#banner .content header h2 {
 					font-size: 2.5em;
 					margin: 0;
+					font-family: 'Raleway';
+					font-weight: 700;
 				}
 
 				#banner .content header p {
@@ -3999,3 +4068,100 @@
 					}
 
 	}
+/* Team */
+.team-member, .team-member .team-img {
+	position: relative;
+}
+.team-member {
+  overflow: hidden;
+}
+.team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.90);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+  top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .desk {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member:hover .team-hover .s-link {
+  bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+  opacity: 1;
+}
+.team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member .s-link a {
+   margin: 0 10px;
+   color: #f62459;
+   font-size: 16px;
+   display: grid;
+}
+.team-title {
+  position: static;
+  padding: 20px 0;
+  display: inline-block;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.team-title h5 {
+  margin-bottom: 0px;
+  display: block;
+  text-transform: uppercase;
+}
+.team-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  letter-spacing: 1px;
+}
+/* Box */
+.box {
+	padding: 1em;
+}
+.box.style2 {
+	padding: 1.5em 1.25em 1.5em 1.25em;
+	background-color: rgba(255, 255, 255, 0.9);
+}
