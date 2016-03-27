@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,800");
+@import url("https://fonts.googleapis.com/css?family=Rokkitt:400,700");
 @import url("font-awesome.min.css");
 
 /*
@@ -1665,7 +1666,6 @@ input[type="button"], input[type="submit"], input[type="reset"], .button, button
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f62459;
-  /** #98c593 **/
   border: 0;
   border-radius: 3.5em;
   color: #fff;
@@ -1678,8 +1678,9 @@ input[type="button"], input[type="submit"], input[type="reset"], .button, button
   position: relative;
   text-align: center;
   text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
-input[type="button"].down, input[type="submit"].down, input[type="reset"].down, .button.down, button.down {
+input[type="button"].down, input[type="submit"].down, input[type="reset"].down, .button.down, button.down, button {
   width: 5em;
   height: 5em;
   line-height: 4.5em;
@@ -2414,14 +2415,12 @@ body {
 }
 .team-member, .team-member .team-img {
   position: relative;
+  height: auto;
 }
 .team-member, .team-hover {
   overflow: hidden;
   display: inline-block;
   border-radius: 2.5%;
-}
-.team-member, .team-member .team-img {
-  position: relative;
 }
 .team-member {
   display: inline-block;
